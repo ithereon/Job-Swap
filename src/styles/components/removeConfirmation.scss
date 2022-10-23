@@ -1,0 +1,25 @@
+@import "../color";
+.remove_confirm {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 152px;
+    padding: 32px;
+    border-radius: 8px;
+    gap: 24px;
+  .remove_confirm_title {
+    display: flex;
+    align-items: center;
+    line-height: 27px;
+    color: $blue-900;
+
+    svg {
+        margin-right: 8px;
+    }
+
+  }
+  .remove_confirm_action {
+    display: flex;
+    justify-content: space-between;
+  }
+}

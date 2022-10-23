@@ -1,0 +1,27 @@
+@import "./font.scss";
+@import "./color.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: $black;
+    &.hover, &.focus {
+        color: $blue-500;
+    }
+}
+
+.contain {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}

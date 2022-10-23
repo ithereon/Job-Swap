@@ -1,0 +1,64 @@
+@import "../../styles/color.scss";
+@import "../../styles/font.scss";
+@import "../base.scss";
+
+.header {
+  box-sizing: border-box;
+  gap: 10px;
+  background: $white-pure;
+  border-bottom: 1px solid $white-200;
+}
+.header-top {
+  padding: 24px 0;
+  border-bottom: 1px solid $grayblue-200;
+
+  .header-left {
+  }
+  .header-right {
+    .header-notification,
+    .header-message {
+      display: flex;
+      align-items: center;
+      margin-left: 12px;
+      position: relative;
+
+      .alert-number {
+        position: absolute;
+        left:14px;
+        top: 6px;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 10px;
+        color: $white-pure;
+        background-color: $red-500;
+        padding: 2px 4px;
+        border-radius: 12px;
+      }
+    }
+    .header-message {
+    }
+    .header-user {
+      display: flex;
+      align-items: center;
+      margin-left: 32px;
+
+      svg {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.header-bottom {
+  padding: 24px 0;
+
+  a {
+    
+  }
+  .navbar_item {
+    margin-right: 32px;
+    &.last-child {
+      margin-right: 0;
+    }
+  }
+}
