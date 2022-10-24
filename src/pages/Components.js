@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
 import UIButton from "../components/UIButton";
@@ -13,11 +13,11 @@ import RemoveConfirmation from "../components/RemoveConfirmation";
 import Overlay from "../components/Overlay";
 import ImageAvatars from "../components/ImageAvatars";
 import CustomInput from "../components/form/CustomInput";
-import Customcheckbox from "../components/Customcheckbox";
+// import Customcheckbox from "../components/Customcheckbox";
 // import Customcalendar from "./components/CustomCalendar";
-import {AiOutlineRight} from "react-icons/ai";
-import {BiChevronRight} from "react-icons/bi";
-import {FiChevronRight} from "react-icons/fi"
+import { AiOutlineRight } from "react-icons/ai";
+import { BiChevronRight } from "react-icons/bi";
+import { FiChevronRight } from "react-icons/fi"
 
 import { BsChevronRight } from "react-icons/bs";
 
@@ -31,9 +31,11 @@ import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 
 import avatarSize from "../utils/avatar";
-
 import Input from "@mui/material/Input";
 import Box from "@mui/material/Box";
+
+import Checkbox from "../components/Checkbox";
+import RadioButton from "../components/RadioButton";
 
 const theme = createTheme({
   typography: {
@@ -64,6 +66,14 @@ const theme = createTheme({
 const ariaLabel = { "aria-label": "description" };
 
 function App() {
+  const [checked, setChecked] = useState(false);
+  const [selected, setSelected] = useState("first");
+  const [selected1, setSelected1] = useState("third");
+  const [enabled, setEnabled] = useState(true);
+
+  const handleCheckboxChange = event => {
+    setChecked(event.target.checked);
+  }
   return (
     <>
       <div>
@@ -431,7 +441,7 @@ function App() {
               fill="#1A5FB2"
             />
           </svg> */}
-          <FiChevronRight/>
+          <FiChevronRight />
         </LinkButton>
         <LinkButton
           wcolor={colorTheme.white.pure}
@@ -460,7 +470,7 @@ function App() {
           variant="contained"
         >
           Follow
-          <BiChevronRight/>
+          <BiChevronRight />
           {/* <svg
             width="6"
             height="11"
@@ -559,7 +569,41 @@ function App() {
         </Box>
       </div>
       <div>
-        <Customcheckbox />
+        <Checkbox checked={checked}
+          onChange={handleCheckboxChange} />
+        {/* <Checkbox /> */}
+      </div>
+      <div>
+        <RadioButton
+          value="first"
+          selected={selected}
+          enabled={true}
+          text="First Radio Button"
+          onChange={setSelected}
+        />
+        <RadioButton
+          value="second"
+          enabled={true}
+          selected={selected}
+          text="Second Radio Button"
+          onChange={setSelected}
+        />
+      </div>
+      <div>
+        <RadioButton
+          value="third"
+          enabled={false}
+          selected={selected1}
+          text="Second Radio Button"
+          onChange={setSelected1}
+        />
+        <RadioButton
+          value="forth"
+          enabled={false}
+          selected={selected1}
+          text="Second Radio Button"
+          onChange={setSelected1}
+        />
       </div>
       <div>{/* <Customcalendar /> */}</div>
     </>
