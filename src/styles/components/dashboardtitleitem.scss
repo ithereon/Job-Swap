@@ -1,0 +1,43 @@
+@import "../../styles/color.scss";
+@import "../../styles/font.scss";
+@import "../base.scss";
+
+.dashboard-title-item {
+    box-sizing: border-box;
+    width: 250px;
+    height:168px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 16px;
+    background-color: $white-pure;
+    border-radius: 12px;
+
+    .dashboard-title-item-title {
+        color: $black;
+    }
+    .dashboard-title-item-number {
+        color: $blue-500;
+    }
+    button {
+        padding-left: 0;
+        padding-right: 0;
+        background-color: $white-pure;
+    }
+    
+    &:hover {
+        background-color: $blue-500;
+        .dashboard-title-item-title {
+            color: $white-pure;
+        }
+        .dashboard-title-item-number {
+            color: $white-pure;
+        }
+        button {
+            color: $white-pure;
+            background-color: $blue-500;
+        }
+
+    }
+    
+}

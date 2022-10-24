@@ -6,35 +6,28 @@ import LinkButton from "../LinkButton";
 
 import colorTheme from "../../styles/color";
 
+import {AiOutlineRight} from "react-icons/ai";
+import {BiChevronRight} from "react-icons/bi";
+
 import avatarSize from "../../utils/avatar";
 
-
+import "../../styles/font.scss";
 import "../../styles/components/dashboardtitleitem.scss";
 
 const DashboardTitleItem = ({title, number, text}) => {
   return (
-    <div className="dashboard-title-item d-flex flex-direction-column">
-        <label>{title}</label>
-        <label>{number}</label>
+    <div className="dashboard-title-item d-flex flex-column">
+        <label className="dashboard-title-item-title n_400">{title}</label>
+        <label className="dashboard-title-item-number x_l_700">{number}</label>
         <LinkButton
           wcolor={colorTheme.white.pure}
           wfontcolor={colorTheme.blue.w500}
           fontstyle="n_500"
           variant="contained"
+          className="dashboard-title-item-link"
         >
           {text}
-          <svg
-            width="6"
-            height="11"
-            viewBox="0 0 6 11"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.199951 9.11252L3.69995 5.61252L0.199951 2.11252L0.899951 0.712524L5.79995 5.61252L0.899951 10.5125L0.199951 9.11252Z"
-              fill="#1A5FB2"
-            />
-          </svg>
+          <BiChevronRight />
         </LinkButton>
     </div>
   );

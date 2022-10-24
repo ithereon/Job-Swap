@@ -23,6 +23,25 @@ const LinkButton = styled(Button)(({wcolor, wfontcolor, fontstyle }) => ({
   gap: 6,
   border: "none",
   boxShadow: "none",
+  TransitionEvent: "none",
+  "&:hover": {
+    backgroundColor: "unset",
+    boxShadow: "none",
+    
+  },
+  "&:focus": {
+    backgroundColor: "unset",
+    boxShadow: "none",
+    TransitionEvent: "none"
+  },
+  "&:active": {
+    backgroundColor: "unset",
+    boxShadow: "none",
+    TransitionEvent: "none"
+  },
+  // hover: {
+  //   backgroundColor: "#ffffff",
+  // }
   // borderColor: wcolor,
 }));
 

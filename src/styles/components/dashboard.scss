@@ -1,0 +1,11 @@
+.dashboard-content {
+    display: flex;
+    justify-content: space-between;
+    .dashboard-left {
+        max-width: 320px;
+    }
+    .dashboard-right {
+        max-width: 1264px;
+    }
+
+}

@@ -55,9 +55,10 @@
   a {
     
   }
-  .navbar_item {
+  ul li {
     margin-right: 32px;
-    &.last-child {
+
+    &:last-child {
       margin-right: 0;
     }
   }
