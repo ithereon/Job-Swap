@@ -12,8 +12,14 @@ import MenuLink from "../components/MenuLink";
 import RemoveConfirmation from "../components/RemoveConfirmation";
 import Overlay from "../components/Overlay";
 import ImageAvatars from "../components/ImageAvatars";
+<<<<<<< HEAD
 import CustomInput from "../components/form/CustomInput";
 // import Customcheckbox from "../components/Customcheckbox";
+=======
+import Customcheckbox from "../components/Customcheckbox";
+import CustomSearchInput from "../components/form/CustomSearchInput";
+import CustomInput from "../components/form/CustomInput";
+>>>>>>> 67c922ab4f3fbcbacb2f8a1c081a2a9f93f912d7
 // import Customcalendar from "./components/CustomCalendar";
 import { AiOutlineRight } from "react-icons/ai";
 import { BiChevronRight } from "react-icons/bi";
@@ -549,25 +555,21 @@ function App() {
           ></Avatar>
         </Stack>
       </div>
-      <div>
-        {/* <CustomInput disabled="false"/>
-        <CustomInput disabled="true"/> */}
-        <Box
-          component="form"
-          sx={{
-            "& > :not(style)": { m: 1 },
-          }}
-          noValidate
-          autoComplete="off"
-        >
-          <Input
-            placeholder="Search Employees, Companies"
-            inputProps={ariaLabel}
-          />
-          <Input placeholder="" inputProps={ariaLabel} />
-          <Input disabled defaultValue="Disabled text" inputProps={ariaLabel} />
-        </Box>
+
+      <CustomSearchInput />
+      <CustomSearchInput disable={true} />
+      <CustomSearchInput size="small" />
+
+      {/* custom-input */}
+      <CustomInput label="Text" />
+      <CustomInput size="small" />
+
+      {/* Custom Toggle Button */}
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked />
+        <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
       </div>
+<<<<<<< HEAD
       <div>
         <Checkbox checked={checked}
           onChange={handleCheckboxChange} />
@@ -606,6 +608,8 @@ function App() {
         />
       </div>
       <div>{/* <Customcalendar /> */}</div>
+=======
+>>>>>>> 67c922ab4f3fbcbacb2f8a1c081a2a9f93f912d7
     </>
   );
 }

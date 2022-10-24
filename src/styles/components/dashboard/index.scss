@@ -1,0 +1,26 @@
+@import "../../font.scss";
+
+.dashboard-content {
+    display: flex;
+    justify-content: space-between;
+    .dashboard-left {
+        width: 18%;
+        
+        .post-request {
+            margin: 20px 0;
+        }
+    }
+    .dashboard-right {
+        width: 80%;
+
+        .feed-control {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .feedtilter {
+
+            }
+        }
+    }
+
+}

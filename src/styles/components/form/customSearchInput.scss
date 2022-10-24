@@ -1,0 +1,8 @@
+@import "../../color.scss";
+
+.custom-input-search {
+    border: 2px solid $gray-200;
+    &:focus-within {
+        border-color: $blue-400;
+    }
+}

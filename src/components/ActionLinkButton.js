@@ -16,6 +16,7 @@ const typePattern = {
 };
 
 const ActionLinkButton = styled(Button)(({wcolor, wfontcolor, fontstyle }) => ({
+  padding: 0,
   color: wfontcolor,
   backgroundColor: wcolor,
   fontSize: fontTheme[fontstyle].size,
@@ -23,6 +24,7 @@ const ActionLinkButton = styled(Button)(({wcolor, wfontcolor, fontstyle }) => ({
   lineHeight: typePattern[fontstyle].lineHeight,
   gap: 6,
   border: "none",
+  boxShadow: "none",
 }));
 
 export default React.memo(ActionLinkButton);
