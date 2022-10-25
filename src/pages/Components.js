@@ -12,12 +12,13 @@ import MenuLink from "../components/MenuLink";
 import RemoveConfirmation from "../components/RemoveConfirmation";
 import Overlay from "../components/Overlay";
 import ImageAvatars from "../components/ImageAvatars";
-import CustomInput from "../components/form/CustomInput";
 import Customcheckbox from "../components/Customcheckbox";
+import CustomSearchInput from "../components/form/CustomSearchInput";
+import CustomInput from "../components/form/CustomInput";
 // import Customcalendar from "./components/CustomCalendar";
-import {AiOutlineRight} from "react-icons/ai";
-import {BiChevronRight} from "react-icons/bi";
-import {FiChevronRight} from "react-icons/fi"
+import { AiOutlineRight } from "react-icons/ai";
+import { BiChevronRight } from "react-icons/bi";
+import { FiChevronRight } from "react-icons/fi"
 
 import { BsChevronRight } from "react-icons/bs";
 
@@ -431,7 +432,7 @@ function App() {
               fill="#1A5FB2"
             />
           </svg> */}
-          <FiChevronRight/>
+          <FiChevronRight />
         </LinkButton>
         <LinkButton
           wcolor={colorTheme.white.pure}
@@ -460,7 +461,7 @@ function App() {
           variant="contained"
         >
           Follow
-          <BiChevronRight/>
+          <BiChevronRight />
           {/* <svg
             width="6"
             height="11"
@@ -539,29 +540,20 @@ function App() {
           ></Avatar>
         </Stack>
       </div>
-      <div>
-        {/* <CustomInput disabled="false"/>
-        <CustomInput disabled="true"/> */}
-        <Box
-          component="form"
-          sx={{
-            "& > :not(style)": { m: 1 },
-          }}
-          noValidate
-          autoComplete="off"
-        >
-          <Input
-            placeholder="Search Employees, Companies"
-            inputProps={ariaLabel}
-          />
-          <Input placeholder="" inputProps={ariaLabel} />
-          <Input disabled defaultValue="Disabled text" inputProps={ariaLabel} />
-        </Box>
+
+      <CustomSearchInput />
+      <CustomSearchInput disable={true} />
+      <CustomSearchInput size="small" />
+
+      {/* custom-input */}
+      <CustomInput label="Text" />
+      <CustomInput size="small" />
+
+      {/* Custom Toggle Button */}
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked />
+        <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
       </div>
-      <div>
-        <Customcheckbox />
-      </div>
-      <div>{/* <Customcalendar /> */}</div>
     </>
   );
 }

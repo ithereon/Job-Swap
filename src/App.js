@@ -12,7 +12,6 @@ import MenuLink from "./components/MenuLink";
 import RemoveConfirmation from "./components/RemoveConfirmation";
 import Overlay from "./components/Overlay";
 import ImageAvatars from "./components/ImageAvatars";
-import CustomInput from "./components/form/CustomInput";
 import Customcheckbox from "./components/Customcheckbox";
 // import Customcalendar from "./components/CustomCalendar";
 
