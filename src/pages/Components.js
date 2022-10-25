@@ -12,15 +12,12 @@ import MenuLink from "../components/MenuLink";
 import RemoveConfirmation from "../components/RemoveConfirmation";
 import Overlay from "../components/Overlay";
 import ImageAvatars from "../components/ImageAvatars";
-<<<<<<< HEAD
+
 import CustomInput from "../components/form/CustomInput";
-// import Customcheckbox from "../components/Customcheckbox";
-=======
+
 import Customcheckbox from "../components/Customcheckbox";
 import CustomSearchInput from "../components/form/CustomSearchInput";
-import CustomInput from "../components/form/CustomInput";
->>>>>>> 67c922ab4f3fbcbacb2f8a1c081a2a9f93f912d7
-// import Customcalendar from "./components/CustomCalendar";
+
 import { AiOutlineRight } from "react-icons/ai";
 import { BiChevronRight } from "react-icons/bi";
 import { FiChevronRight } from "react-icons/fi"
@@ -569,7 +566,6 @@ function App() {
         <input type="checkbox" class="custom-control-input" id="customSwitch1" checked />
         <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
       </div>
-<<<<<<< HEAD
       <div>
         <Checkbox checked={checked}
           onChange={handleCheckboxChange} />
@@ -608,8 +604,6 @@ function App() {
         />
       </div>
       <div>{/* <Customcalendar /> */}</div>
-=======
->>>>>>> 67c922ab4f3fbcbacb2f8a1c081a2a9f93f912d7
     </>
   );
 }
