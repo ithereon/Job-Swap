@@ -1,0 +1,57 @@
+@import "../../color.scss";
+.staffing-request {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  border: 2px solid $blue-400;
+  border-radius: 12px;
+  gap: 28px;
+  background-color: $white-pure;
+
+  .staffing-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .staffing-company {
+      display: flex;
+      align-items: center;
+      .staffing-mark {
+      }
+      .staffing-title {
+      }
+      .state {
+      }
+    }
+  }
+  .staffing-body {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .request-content {
+        .request-content-title {
+            color: $black;
+        }
+        .request-content-suggestion {
+            color: $black;
+        }
+    }
+    .employ-detail {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        .single-detail {
+            display: flex;
+            flex-direction: column;
+            .detail-label {
+                color: $blue-500;
+            }
+            .detail-value {
+                color: $black;
+            }
+        }
+    }
+  }
+}

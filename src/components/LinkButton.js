@@ -16,7 +16,7 @@ const typePattern = {
 const LinkButton = styled(Button)(({wcolor, wfontcolor, fontstyle }) => ({
   color: wfontcolor,
   backgroundColor: wcolor,
-  // padding: 16,
+  padding: 0,
   fontSize: fontTheme[fontstyle].size,
   fontWeight: fontTheme[fontstyle].weight,
   lineHeight: typePattern[fontstyle].lineHeight,

@@ -1,0 +1,58 @@
+@import "../../color.scss";
+.available-employ {
+    position: relative;
+  border: 2px solid $blue-400;
+  border-radius: 12px;
+  gap: 28px;
+  background-color: $white-pure;
+  width: 100%;
+  .single-employee {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+
+    .employee-information {
+      display: flex;
+      align-items: center;
+      .employee-header {
+        margin-left: 16px;
+        .employee-name {
+        }
+        .employee-title {
+        }
+      }
+    }
+    .employee-body {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      .employee-detail {
+        display: flex;
+        justify-content: space-around;
+        width: calc(100% - 130px);
+        .single-detail {
+          display: flex;
+          flex-direction: column;
+          .detail-label {
+            color: $gray-400;
+          }
+          .detail-value {
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+  .employee-state {
+    display: flex;
+    height: 32px;
+    justify-content: end;
+    label {
+      padding: 8px 10px 0 10px;
+      color: $white-pure;
+      background-color: $blue-400;
+      border-radius: 12px 0;
+    }
+  }
+}

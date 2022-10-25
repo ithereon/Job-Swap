@@ -1,18 +1,65 @@
+@import "../color.scss";
+
 .userprofile {
-    .profile-top {
-        .profile-background {
+    box-sizing: border-box;
+    border:1px solid $white-200;
+    border-radius: 12px;
+    background-color: $white-pure;
 
-        }
-        .profile-avatar {
+  .profile-top {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 160px;
 
+    figure {
+      position: absolute;
+      top: 0;
+      width: inherit;
+
+      .profile-background {
+        width: 100%;
+        height: 80px;
+        border-radius: 12px 12px 0 0;
+      }
+    }
+
+    .profile-avatar {
+    }
+  }
+  .profile-center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .profile-name {
+        
+    }
+    .profile-job {
+    }
+  }
+  .profile-bottom {
+    text-align: center;
+    margin: 24px;
+    border-top: 1px solid $grayblue-300;
+
+    .company {
+        padding-top: 24px;
+        padding-bottom: 16px;
+
+        label {
+            margin: 0 10px;
         }
     }
-    .profile-body {
-        .profile-name {
+    .company-address{
 
-        }
-        .profile-job {
-            
-        }
     }
+    .coc-number{
+        margin: 8px 0 20px 0;
+    }
+    .actionlink{
+
+    }
+  }
 }
